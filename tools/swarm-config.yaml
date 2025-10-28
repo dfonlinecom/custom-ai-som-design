@@ -1,0 +1,258 @@
+# Research Swarm Configuration
+# This file defines the parallel research tasks for component sourcing and analysis
+
+version: "1.0"
+project: "Custom AI SOM Design"
+
+# Research Swarms Configuration
+swarms:
+  
+  # CPU Deep Research Swarm
+  cpu_research:
+    name: "CPU Component Research"
+    description: "Deep research on laptop CPUs with integrated NPU and GPU"
+    agents: 3
+    tasks:
+      - name: "AMD Ryzen AI Research"
+        focus: "AMD Ryzen AI 300 series specifications, pricing, availability"
+        sources:
+          - "AMD official website"
+          - "DigiKey, Mouser"
+          - "Alibaba/1688"
+          - "Technical forums and reviews"
+        outputs:
+          - "Detailed specifications"
+          - "Pricing matrix (1, 10, 100, 1000 units)"
+          - "Lead times and availability"
+          - "Supplier contacts"
+      
+      - name: "Intel Core Ultra Research"
+        focus: "Intel Core Ultra Series 2 specifications, pricing, availability"
+        sources:
+          - "Intel official website"
+          - "DigiKey, Mouser"
+          - "Alibaba/1688"
+          - "Technical forums and reviews"
+        outputs:
+          - "Detailed specifications"
+          - "Pricing matrix (1, 10, 100, 1000 units)"
+          - "Lead times and availability"
+          - "Supplier contacts"
+      
+      - name: "Alternative CPU Options"
+        focus: "Other laptop CPUs with AI capabilities"
+        sources:
+          - "Qualcomm Snapdragon X Elite"
+          - "MediaTek Dimensity"
+          - "Other emerging options"
+        outputs:
+          - "Comparison matrix"
+          - "Feasibility analysis"
+  
+  # AI Accelerator Research Swarm
+  accelerator_research:
+    name: "AI Accelerator Research"
+    description: "Research on external NPU/TPU accelerators"
+    agents: 2
+    tasks:
+      - name: "Hailo-8 Deep Research"
+        focus: "Hailo-8 and Hailo-8L specifications, SDK, pricing"
+        sources:
+          - "Hailo official website"
+          - "Authorized distributors"
+          - "Alibaba/1688"
+          - "Developer documentation"
+        outputs:
+          - "Complete specifications"
+          - "SDK capabilities and frameworks"
+          - "Pricing and MOQ"
+          - "Reference designs"
+      
+      - name: "Alternative Accelerators"
+        focus: "Google Coral, Intel Movidius, other options"
+        sources:
+          - "Google Coral website"
+          - "Intel website"
+          - "Distributors"
+        outputs:
+          - "Comparison matrix"
+          - "Availability analysis"
+  
+  # Memory Research Swarm
+  memory_research:
+    name: "Memory Component Research"
+    description: "DDR5 memory chips and modules"
+    agents: 2
+    tasks:
+      - name: "DDR5 SO-DIMM Research"
+        focus: "DDR5 SO-DIMM modules for laptop CPUs"
+        sources:
+          - "Micron, Samsung, SK Hynix"
+          - "DigiKey, Mouser"
+          - "Alibaba/1688"
+        outputs:
+          - "Compatible modules"
+          - "Pricing matrix"
+          - "Availability"
+      
+      - name: "DDR5 Chip Research"
+        focus: "DDR5 chips for soldered memory"
+        sources:
+          - "Micron, Samsung, SK Hynix"
+          - "Distributors"
+        outputs:
+          - "Chip specifications"
+          - "Pricing and MOQ"
+          - "Reference designs"
+  
+  # Power Management Research Swarm
+  power_research:
+    name: "Power Management Research"
+    description: "Power management ICs and voltage regulators"
+    agents: 2
+    tasks:
+      - name: "Multi-phase Controller Research"
+        focus: "Multi-phase controllers for CPU power"
+        sources:
+          - "Texas Instruments"
+          - "Infineon"
+          - "Renesas"
+          - "Monolithic Power Systems"
+        outputs:
+          - "Suitable controllers"
+          - "Reference designs"
+          - "Pricing and availability"
+      
+      - name: "Voltage Regulator Research"
+        focus: "High-efficiency voltage regulators"
+        sources:
+          - "Major IC manufacturers"
+          - "Distributors"
+        outputs:
+          - "Component selection"
+          - "BOM with pricing"
+  
+  # Connector and Passive Components Research
+  components_research:
+    name: "Components Research"
+    description: "Connectors, passives, and other components"
+    agents: 2
+    tasks:
+      - name: "SO-DIMM Connector Research"
+        focus: "260-pin SO-DIMM connectors"
+        sources:
+          - "TE Connectivity"
+          - "Molex"
+          - "Hirose"
+          - "Alibaba/1688"
+        outputs:
+          - "Connector options"
+          - "Pricing comparison"
+          - "Availability"
+      
+      - name: "Passive Components Research"
+        focus: "Capacitors, resistors, inductors for power"
+        sources:
+          - "Murata, TDK, Vishay"
+          - "DigiKey, Mouser"
+          - "Alibaba/1688"
+        outputs:
+          - "Component selection"
+          - "Bulk pricing"
+  
+  # Manufacturing Research Swarm
+  manufacturing_research:
+    name: "Manufacturing Research"
+    description: "PCB manufacturers and assembly services"
+    agents: 3
+    tasks:
+      - name: "PCBWay Detailed Research"
+        focus: "PCBWay capabilities, pricing, lead times"
+        sources:
+          - "PCBWay website"
+          - "Customer reviews"
+          - "Direct quotes"
+        outputs:
+          - "Capability matrix"
+          - "Pricing for different quantities"
+          - "Lead time analysis"
+      
+      - name: "Alternative Manufacturers"
+        focus: "JLCPCB, MacroFab, AdvancedPCB, others"
+        sources:
+          - "Manufacturer websites"
+          - "Reviews and comparisons"
+        outputs:
+          - "Comparison matrix"
+          - "Recommendations"
+      
+      - name: "Chinese Manufacturers"
+        focus: "High-volume manufacturers on Alibaba"
+        sources:
+          - "Alibaba/1688"
+          - "Supplier ratings and reviews"
+        outputs:
+          - "Supplier list"
+          - "Pricing for volume production"
+          - "Quality assessment"
+  
+  # Pricing and BOM Research Swarm
+  pricing_research:
+    name: "Pricing and BOM Research"
+    description: "Comprehensive pricing analysis and BOM cost"
+    agents: 2
+    tasks:
+      - name: "Component Pricing Analysis"
+        focus: "Collect pricing from all sources"
+        sources:
+          - "DigiKey, Mouser"
+          - "Alibaba/1688"
+          - "Direct from manufacturers"
+        outputs:
+          - "Pricing database"
+          - "Cost comparison by quantity"
+          - "Best sourcing strategy"
+      
+      - name: "Total BOM Cost Analysis"
+        focus: "Calculate total BOM cost for different quantities"
+        quantities: [1, 10, 100, 1000]
+        outputs:
+          - "BOM cost breakdown"
+          - "Cost reduction opportunities"
+          - "Target pricing analysis"
+
+# Research Methodology
+methodology:
+  parallel_execution: true
+  cross_validation: true
+  documentation: "automatic"
+  update_frequency: "daily"
+  
+# Output Format
+outputs:
+  formats:
+    - "JSON (machine-readable)"
+    - "Markdown (human-readable)"
+    - "CSV (spreadsheet)"
+  storage:
+    location: "research/"
+    versioning: true
+    
+# Integration
+integration:
+  github: true
+  documentation: true
+  alerts:
+    price_changes: true
+    availability_changes: true
+    new_components: true
+
+# Scheduling
+schedule:
+  initial_research: "immediate"
+  updates:
+    frequency: "daily"
+    time: "00:00 UTC"
+  deep_research:
+    frequency: "weekly"
+    day: "Monday"
