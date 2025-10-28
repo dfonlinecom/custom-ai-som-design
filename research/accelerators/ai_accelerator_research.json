@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "input": "Hailo-8 M.2 AI accelerator module - specifications, SDK support, pricing, and suppliers",
+      "output": {
+        "accelerator_model": "Hailo-8 M.2 AI Accelerator Module (M.2 2280 Key M, B+M, or A+E)",
+        "specifications": "**AI Performance:** Up to 26 Tera-Operations Per Second (TOPS) (Source: Hailo, Waveshare). **Power Consumption:** 2.5W typical, 8.65W maximum (Source: Waveshare, Hailo). **Interface Type:** PCIe Gen3, 2-lane or 4-lane (Source: Hailo, Waveshare). **Form Factor:** M.2 Key M (2280, 2260, 2242) and M.2 Key B+M, M.2 Key A+E variants available (Source: Hailo, Waveshare). **Temperature Range:** Extended operating temperature range of -40°C to 85°C (Source: Hailo, Waveshare).",
+        "framework_support": "Supported AI frameworks include TensorFlow, TensorFlow Lite, ONNX, Keras, and PyTorch (Source: Waveshare product page). The Hailo Dataflow Compiler and HailoRT runtime library are used for model porting and deployment, supporting both Linux and Windows operating systems.",
+        "pricing_1_unit": "US$179.99 - $187.99 (Source: Waveshare, for the module only). US$220.00 (Source: AAEON e-shop snippet). US$249.99 (Source: Jevois Inc., for M.2 A+E 2230 variant). US$282.00 (Source: RobotShop, for a kit variant). The lowest confirmed price for the module only is **US$179.99** (Source: Waveshare).",
+        "pricing_100_units": "Bulk pricing for 100 units is not publicly listed and requires direct inquiry to official distributors or Hailo. However, one wholesale source offers a price range of US$198 - 249 per piece with a 1-piece MOQ, indicating that the lower end of this range is likely applicable to smaller bulk orders (Source: Gift Tree Co., Ltd via Global Sources). Discounts up to 20% for businesses were noted from other distributors (Source: SoSelectronic snippet).",
+        "availability": "In stock from various distributors and resellers (e.g., Waveshare, RobotShop, AAEON). Lead time from some wholesale suppliers is 1–7 days (Source: Global Sources). Minimum Order Quantity (MOQ) is typically 1 piece from resellers, but for wholesale/bulk orders, the MOQ is 1 piece (Source: Global Sources, with price tiers suggesting bulk discounts are available upon inquiry). Integration requirements include a host system with a compatible M.2 slot (PCIe Gen3, 2-lane or 4-lane) and the HailoRT software suite for model deployment. Reference designs are available via Hailo's developer zone and partner ecosystem.",
+        "suppliers": "**Official Distributors:** EBV Elektronik (Avnet), J-Squared Technologies (North America), Macnica DHW (South America). **Resellers/Integrators:** Waveshare, AAEON, RobotShop, Jevois Inc., Advantech, Premio Inc. (Source: Search results and product pages)."
+      },
+      "error": ""
+    },
+    {
+      "input": "Hailo-8L M.2 AI accelerator module - specifications, SDK support, pricing, and suppliers",
+      "output": {},
+      "error": ""
+    },
+    {
+      "input": "Google Coral M.2 Accelerator with Dual Edge TPU - specifications, pricing, and availability",
+      "output": {
+        "accelerator_model": "Coral M.2 Accelerator with Dual Edge TPU (Part No: G650-06076-01)",
+        "specifications": "**TOPS Performance:** 8 TOPS total peak performance (int8) (4 TOPS per individual Edge TPU)\n**Power Consumption:** 2 TOPS per watt (4W total maximum power consumption)\n**Interface Type:** M.2 (E-key) with 2x PCIe Gen2 x1 interfaces (one per Edge TPU)\n**Form Factor:** M.2-2230-D3-B module (22.0 x 30.0 x 2.8 mm)\n**Temperature Range:** Operating temperature: -40 °C to +85 °C\n**Integration Note:** Requires an M.2 E-key slot with support for two PCIe x1 connections, which is not universal.",
+        "framework_support": "The Edge TPU is designed exclusively for **TensorFlow Lite** models. Models must be converted to TensorFlow Lite format and quantized (using quantization-aware training or full integer post-training quantization) before being compiled for the Edge TPU. The device is not compatible with other major frameworks like PyTorch or ONNX without conversion. The official SDK is the **PyCoral API** (Python) and **libcoral API** (C++).",
+        "pricing_1_unit": "**$46.99 USD** (Source: Seeed Studio [1]) or **$67.32 USD** (Source: Mouser [2]). The lower price from Seeed Studio is used as the primary single-unit price.",
+        "pricing_100_units": "The bulk price for 100 units is not explicitly listed on the distributor pages accessed. However, the price for a single unit is significantly lower at Seeed Studio ($46.99) compared to Mouser ($67.32). Based on the single-unit price from Seeed Studio, the 100-unit price would likely be at or below **$46.99 per unit** (Source: Seeed Studio, based on 10+ unit pricing). Mouser's pricing structure typically offers discounts for 100+ units, which would be lower than their $67.32 single-unit price.",
+        "availability": "In stock at Seeed Studio (10+ units) and RS Components (123 units ready to ship from another location). Mouser's availability is currently obscured by a verification page, but search results indicate stock. Availability is generally good from major distributors.",
+        "suppliers": "**Major Distributors:**\n*   Seeed Studio\n*   Mouser Electronics\n*   RS Components (formerly RS Online)\n*   Newark (Farnell)\n*   Electromaker\n*   AliExpress (third-party/reseller)"
+      },
+      "error": ""
+    },
+    {
+      "input": "Intel Movidius Myriad X VPU - specifications, pricing, and availability for M.2 or PCIe",
+      "output": {
+        "accelerator_model": "Intel Movidius Myriad X VPU (MA2485) - M.2 Module (e.g., Advantech VEGA-320-01A1)",
+        "specifications": "**VPU:** Intel Movidius Myriad X (MA2485). **Performance:** Over **1 TOPS** per VPU (for 8-bit integer inference) [3]. **Power Consumption:** Single VPU module (VEGA-320) is **3.8W** (typical) [1]. Dual VPU module (UP AI Core XM 2280) is not specified but is typically higher. **Interface/Form Factor:** **M.2 2230 (Key A+E)** for single VPU, or **M.2 2280 (Key B+M)** for dual VPU. Uses **PCIe Gen2 x1** and **USB 2.0** signals [1, 2]. **Temperature Range:** **-20°C to 60°C** (with 0.7m/s airflow) [1]. **Integration Requirements:** Requires a host system with a compatible M.2 slot and an operating system supported by the older OpenVINO toolkit (e.g., Ubuntu 16.04, Windows 10) [1, 2].",
+        "framework_support": "The primary development framework is the **Intel Distribution of OpenVINO Toolkit**. However, support for the Myriad X VPU was **discontinued with OpenVINO 2023.0** (and later versions like 2025). Users must use older, legacy versions of OpenVINO (e.g., R2 2019) for full support. Supported frameworks for model conversion include **TensorFlow, Caffe, MXNet, Kaldi, and ONNX** [2, 3].",
+        "pricing_1_unit": "**Advantech VEGA-320-01A1 (Single VPU):** $110.00 (Advantech eStore) or $121.00 (Mouser) [1, 4]. **UP AI Core XM 2280 (Dual VPU):** $159.00 (UP Shop) [2].",
+        "pricing_100_units": "Pricing for 100 units requires direct inquiry with the supplier for a volume quote. **Estimated based on single-unit pricing:** A 10-20% discount on the single-unit price of $110.00 to $159.00 would place the price per unit in the **$88.00 to $143.10** range, but this is an estimate. **Minimum Order Quantities (MOQ):** Not explicitly stated for 100 units, but modules are available for single-unit purchase from distributors.",
+        "availability": "**Advantech VEGA-320-01A1 (Single VPU):** Available to Order (Advantech eStore, Mouser, Newark). **UP AI Core XM 2280 (Dual VPU):** Stock Available Now (UP Shop). The Myriad X VPU itself is an older generation, and Intel has discontinued support in recent OpenVINO versions (2023.0 and later), which may indicate end-of-life for new designs. Lead times for 100+ units would require direct supplier inquiry.",
+        "suppliers": "**Direct Suppliers/Manufacturers:** Advantech (VEGA-320 series), AAEON/UP (AI Core X series), IEI. **Distributors:** Mouser Electronics, Newark, Advantech eStore, UP Shop. The Myriad X VPU itself is a component from Intel, but the modules are sourced from partners."
+      },
+      "error": ""
+    }
+  ]
+}
