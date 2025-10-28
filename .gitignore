@@ -1,0 +1,105 @@
+# PCB Design Files
+*.bak
+*.kicad_pcb-bak
+*.sch-bak
+*-save.pro
+*-save.kicad_pcb
+*.000
+*.bck
+*.kicad_pro-bak
+fp-info-cache
+*.net
+
+# Altium Designer
+History/
+__Previews/
+*.PrjPCBStructure
+*.SchDocPreview
+*.PcbDocPreview
+
+# Eagle
+*.b#*
+*.s#*
+*.l#*
+
+# Gerber Files (keep in releases only)
+gerber/
+*.gbr
+*.drl
+*.gto
+*.gtp
+*.gts
+*.gtl
+*.gbl
+*.gbs
+*.gbo
+*.gbp
+
+# BOM and Assembly
+*.xlsx~
+*.csv~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+*.egg-info/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# API Keys and Secrets
+.env
+.env.local
+secrets.json
+config/secrets.yaml
+*_secrets.py
+
+# Research Data (large files)
+research/raw_data/
+research/downloads/
+*.zip
+*.tar.gz
+*.rar
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.log
+
+# Documentation Build
+docs/_build/
+docs/.doctrees/
+site/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Backup Files
+*.backup
+*~
